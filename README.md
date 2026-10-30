@@ -1,5 +1,7 @@
 My resume, created with LaTeX. 
 
+---
+
 Setup the development environment by installing the required dependencies.
 
 To install with Homebrew, use: 
@@ -19,6 +21,8 @@ To verify installation, use:
 ```
 pdflatex --version
 ```
+
+---
 
 To compile the document, use:
 
