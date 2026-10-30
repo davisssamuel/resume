@@ -1,0 +1,104 @@
+\documentclass[10pt,letterpaper]{article}
+
+% A lightweight, conventional résumé layout.
+\usepackage[margin=0.62in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+
+% Section headings with a rule underneath.
+\newcommand{\ressection}[1]{%
+  \vspace{14pt}%
+  {\large\bfseries\MakeUppercase{#1}}\par
+  \vspace{2pt}\hrule
+  \vspace{4pt}%
+}
+
+% Left/right aligned heading rows.
+\newcommand{\entry}[2]{%
+  \textbf{#1}\hfill #2\par
+}
+\newcommand{\subentry}[2]{%
+  \textit{#1}\hfill \textit{#2}\par
+}
+
+% Compact bullet list, using only LaTeX's built-in list environment.
+\newenvironment{resumeitems}{%
+  \begin{list}{$\diamond$}{%
+    \setlength{\leftmargin}{1.35em}%
+    \setlength{\labelwidth}{0.9em}%
+    \setlength{\labelsep}{0.35em}%
+    \setlength{\itemsep}{0pt}%
+    \setlength{\parsep}{0pt}%
+    \setlength{\topsep}{2pt}%
+    \setlength{\partopsep}{0pt}%
+  }%
+}{\end{list}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries Samuel Davis}\\[4pt]
+  Cincinnati, OH \(\diamond\) 513-410-0106 \(\diamond\)
+  \href{mailto:davissamuelg1@gmail.com}{davissamuelg1@gmail.com} \(\diamond\)
+  \href{https://samueldavis.net}{samueldavis.net}
+\end{center}
+
+\ressection{Summary}
+Software engineer passionate about creating beautiful and functional software.
+Strong leadership skills and teamwork. Proficient in Java, Go, C/C++, Rust,
+Python, and Bash. Experienced with REST API development, shell scripting,
+Linux server management, database management (MySQL, PostgreSQL, and MongoDB),
+and Kubernetes setup and management.
+
+\ressection{Education}
+\entry{Cedarville University}{December 2024}
+B.S. in Computer Science \& Cyber Operations
+
+\ressection{Experience}
+\entry{Huntington National Bank}{January 2025 -- Present}
+\subentry{Software Engineer}{Columbus, OH}
+\begin{resumeitems}
+  \item Developed and maintained transaction APIs using Java, Springboot, and Lombok.
+  \item Integrated APIs with IBM Message Queues and MSSQL and PostgreSQL databases.
+  \item Used Jenkins to deploy code and Splunk to query API payloads.
+  \item Worked in a Kanban team.
+\end{resumeitems}
+
+\vspace{3pt}
+\entry{Virginia Tech National Security Institute}{May 2024 -- August 2024}
+\subentry{Software Engineering Intern}{Blacksburg, VA}
+\begin{resumeitems}
+  \item Performed data analysis on ID data using Python.
+  \item Developed a new algorithm for ID data distribution.
+  \item Installed, set up, and managed a Kubernetes cluster.
+  \item Switched from MongoDB to MySQL and configured MySQL database for Kubernetes cluster.
+  \item Developed a database API using ExpressJS.
+\end{resumeitems}
+
+\ressection{Projects}
+\entry{Personal Website}{November 2023 -- Present}
+\begin{resumeitems}
+  \item Created a software engineering blog on repurposed Dell OptiPlex using Golang, Go HTML Templates, and custom CSS.
+  \item Used Cloudflare Tunnels as a forward proxy for the site before migrating to Cloudflare Pages with Hugo as the static site generator.
+\end{resumeitems}
+
+\vspace{3pt}
+\entry{Cedarville University Senior Capstone}{August 2023 -- May 2024}
+\begin{resumeitems}
+  \item Created a decentralized private messenger using the Nostr protocol.
+  \item Developed a multi-page React Native app.
+  \item Worked in a team using the Agile workflow.
+  \item Used Figma to model the application UI.
+\end{resumeitems}
+
+\ressection{Additional Experience}
+\entry{Ohio Army National Guard}{December 2024 -- Present}
+\subentry{Field Artillery Officer}{Delaware, OH}
+
+\end{document}
