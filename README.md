@@ -16,16 +16,22 @@ To install with MacPorts, use:
 sudo port install texlive texlive-latex-extra texlive-fonts-extra 
 ``` 
 
+Verify installation:
+
+```
+latexmk --version
+```
+
 To install an LSP and formatter, use:
 
 ```
 cargo install badness
 ```
 
-To verify installation, use:
+Verify installation:
 
 ```
-pdflatex --version ; badness --version
+badness --version
 ```
 
 ---
@@ -33,5 +39,5 @@ pdflatex --version ; badness --version
 To compile the document, use:
 
 ```
-pdflatex resume.tex
+make
 ```
