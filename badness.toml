@@ -1,0 +1,6 @@
+#:schema https://badness.dev/badness.schema.json
+
+[format]
+line-width = 100
+indent-width = 4
+wrap = "sentence"
