@@ -7,19 +7,25 @@ Setup the development environment by installing the required dependencies.
 To install with Homebrew, use: 
 
 ```
-brew install texlive texlab
+brew install texlive
 ```
 
 To install with MacPorts, use:
 
 ```
-sudo port install texlive-latex texlive-latex-recommended texlive-fonts-recommended texlab
+sudo port install texlive texlive-latex-extra texlive-fonts-extra 
 ``` 
+
+To install an LSP and formatter, use:
+
+```
+cargo install badness
+```
 
 To verify installation, use:
 
 ```
-pdflatex --version
+pdflatex --version ; badness --version
 ```
 
 ---
